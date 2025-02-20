@@ -1,0 +1,101 @@
+.formContainer {
+  width: 50%;
+  margin: 20px auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #ff4500;
+}
+
+.error {
+  color: #ff4500;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* ✅ Scoped buttons inside .buttonContainer */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.buttonContainer .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  color: white;
+  transition: 0.3s;
+}
+
+.buttonContainer .button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.buttonContainer .button:hover:not(:disabled) {
+  background-color: #e63900;
+}
+
+.successMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: white;
+}
+
+/* Wraps checkbox and label in a flex container */
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between checkbox and label */
+  margin: 15px 0;
+}
+
+/* Style the checkbox */
+.checkboxContainer input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  vertical-align:middle;
+  cursor: pointer;
+}
+
+/* Optional: Adjust label styling */
+.checkboxContainer label {
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+}
